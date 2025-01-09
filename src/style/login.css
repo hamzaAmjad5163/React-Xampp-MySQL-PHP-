@@ -1,0 +1,45 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-form {
+    background: url('https://media.giphy.com/media/11w04LB6klGtcA/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh; 
+}
+  
+.signup-form h1 {
+    color: #fcfdff;
+    font-weight: 700;
+  }
+  
+  .signup-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .signup-form .btn {
+    background-color: #00d4ff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .signup-form .btn:hover {
+    background-color: #00a3cc;
+  }
+  
+  .signup-form a {
+    text-decoration: none;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  

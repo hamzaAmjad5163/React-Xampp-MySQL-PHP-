@@ -1,0 +1,26 @@
+.my-text{
+  color: #61dafb;
+}
+/* SWAL CSS */
+div:where(.swal2-container).swal2-center>.swal2-popup 
+  {
+  background-color: #212325;
+}
+.swal2-title, .swal2-html-container{
+  color: white;
+}
+
+.swal2-confirm {
+  background-color: #28a74698; 
+  color: white;
+}
+
+.swal2-deny {
+  background-color: #F27474; 
+  color: white;
+}
+
+.swal2-cancel {
+  background-color: #6c757d; 
+  color: white;
+}
