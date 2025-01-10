@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "intl-tel-input/build/css/intlTelInput.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

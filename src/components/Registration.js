@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "../style/login.css";
-import PasswordInput from "../components/fields/password";
+import PasswordInput from "../components/fields/Password";
 import EmailInput from "../components/fields/Email";
 
 const SignUp = () => {
@@ -106,11 +106,16 @@ return (
                         </div>
                         <div className="col-md-12">
                             <input
-                                type="text"
+                                type="number"
                                 placeholder="Phone Number"
                                 value={phoneNumber}
                                 className="form-control"
-                                onChange={(e) => setPhoneNumber(e.target.value)}
+                                onChange={(e) => {
+                                    const value = e.target.value;
+                                    if (value.length <= 11) {
+                                        setPhoneNumber(value);
+                                    }
+                                }}
                                 required
                             />
                         </div>
@@ -121,6 +126,7 @@ return (
                                 value={username}
                                 className="form-control"
                                 onChange={(e) => setUsername(e.target.value)}
+                                required
                             />
                         </div>
                         <div className="col-md-12">
@@ -130,6 +136,7 @@ return (
                                 value={password}
                                 className="form-control"
                                 onChange={(e) => setPassword(e.target.value)}
+                                required
                             />
                         </div>
                         <div className="col-md-12 position-relative">
@@ -139,6 +146,7 @@ return (
                                 value={confirmPassword}
                                 className="form-control"
                                 onChange={(e) => setConfirmPassword(e.target.value)}
+                                required
                             />
                             <i
                                 className="fa fa-eye position-absolute top-50 end-0 translate-middle-y me-3"
@@ -152,7 +160,19 @@ return (
                             ></i>
                         </div>
                         <div className="col-md-12">
-                            <button type="submit" className="btn btn-primary w-100">
+                            <button
+                                type="submit"
+                                className="btn btn-primary w-100"
+                                disabled={
+                                    !firstName ||
+                                    !lastName ||
+                                    !phoneNumber ||
+                                    !username ||
+                                    !password ||
+                                    !confirmPassword ||
+                                    phoneNumber.length !== 11
+                                }
+                            >
                                 Sign Up
                             </button>
                         </div>
