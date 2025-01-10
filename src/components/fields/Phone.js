@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
-const EmailInput = ({ value, onChange }) => {
+const PhoneInput = ({ value, onChange }) => {
   const [isValid, setIsValid] = useState(null);
 
   const handleChange = (e) => {
-    const email = e.target.value;
+    const Phone = e.target.value;
     onChange(e);
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    setIsValid(emailRegex.test(email));
+    const PhoneRegex = /^[0-9]/;
+    setIsValid(PhoneRegex.test(Phone));
   };
 
   return (
     <div className="">
       <input
-        type="email"
+        type="number"
         className={`form-control ${isValid === null ? "" : isValid ? "is-valid" : "is-invalid"}`}
-        placeholder="Email"
+        placeholder="Phone"
         value={value}
         onChange={handleChange}
         required
@@ -24,4 +24,4 @@ const EmailInput = ({ value, onChange }) => {
   );
 };
 
-export default EmailInput;
+export default PhoneInput;
