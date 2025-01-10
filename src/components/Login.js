@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "../style/login.css";
-import PasswordInput from "../components/fields/password";
+import PasswordInput from "../components/fields/Password";
 import EmailInput from "../components/fields/Email";
 
 const SignIn = () => {
