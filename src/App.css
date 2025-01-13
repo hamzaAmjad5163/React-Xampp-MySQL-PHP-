@@ -24,3 +24,12 @@ div:where(.swal2-container).swal2-center>.swal2-popup
   background-color: #6c757d; 
   color: white;
 }
+.node circle {
+  fill: #5c727d;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node.highlight circle {
+  fill: #ff6f61 !important;
+}
