@@ -1,0 +1,11 @@
+.home-container {
+    height: 100vh; /* Full viewport height */
+    background-image: url("../assets/Sorting Algorithm.png");
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Center any content vertically */
+    align-items: center; /* Center any content horizontally */
+  }
+  
