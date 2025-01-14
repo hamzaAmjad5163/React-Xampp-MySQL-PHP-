@@ -1,0 +1,21 @@
+.sorted-numbers-box {
+    background-color: #f0f8ff; /* Light blue background color */
+    border: 2px solid #00bfff; /* Border color */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .sorted-numbers-box h2 {
+    margin: 0;
+    color: #00bfff;
+  }
+  
+  .sorted-numbers-box p {
+    margin: 0;
+    font-size: 18px;
+    color: #00008b;
+  }
+  

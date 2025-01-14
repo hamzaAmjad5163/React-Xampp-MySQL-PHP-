@@ -5,6 +5,7 @@ import Registration from './components/Registration';
 import Home from './views/Home'; 
 import AlgorithmVisualizer from "../src/Bubble Sort/AlgorithmVisualizer";
 import QuickSort from "../src/Quick Sort/QuickSort";
+import MergeSort from "../src/Merge Sort/Merge-sort";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/home" element={<Home />} /> 
         <Route path="/Bubble_sorting" element={<AlgorithmVisualizer />} /> 
         <Route path="/Quick_Sorting" element={<QuickSort />} /> 
+        <Route path="/merge_Sorting" element={<MergeSort />} /> 
       </Routes>
     </div>
   );
