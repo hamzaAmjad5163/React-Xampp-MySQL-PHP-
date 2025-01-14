@@ -8,14 +8,10 @@ const NavbarComponent = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/home">FIFO</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <NavDropdown title="Algorithms" id="basic-nav-dropdown">
             <NavDropdown.Item href="/Bubble_sorting">Bubble Sorting</NavDropdown.Item>
             <NavDropdown.Item href="/Quick_Sorting">Quick Sorting</NavDropdown.Item>
             <NavDropdown.Item href="/merge_Sorting">Merge Sorting</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
