@@ -12,8 +12,8 @@ const NavbarComponent = () => {
           <Nav.Link href="#link">Link</Nav.Link>
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="/Bubble_sorting">Bubble Sorting</NavDropdown.Item>
-            <NavDropdown.Item href="/Quick_Sorting">Quick_Sorting</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Item href="/Quick_Sorting">Quick Sorting</NavDropdown.Item>
+            <NavDropdown.Item href="/merge_Sorting">Merge Sorting</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown>
